@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="Grid_Image_3X3">tic-tac-toe_grid_image</string>
+</resources>
