@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, "X wins the game", Toast.LENGTH_LONG).show();
                         else
                             Toast.makeText(MainActivity.this, "O wins the game", Toast.LENGTH_LONG).show();
+                        block_count=0;
+                        gamestatus = 1;
                         Intent intent = getIntent();
                         finish();
                         startActivity(intent);
@@ -66,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
                             String value;
                             for(int i=0;i<9;i++)
                             {
+                                block_count=0;
+                                gamestatus = 1;
                                 tilestatus[i]=2;
                                 value = Integer.toString(i);
                                 String View_name = "imageView" + value;
@@ -77,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                     });
                 }
             };
-            timer2.schedule(testing,2500);
+            timer2.schedule(testing,1000);
         }
 
         }
